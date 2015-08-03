@@ -1,7 +1,9 @@
 require "primes/multiplier"
 require "primes/table"
 
-
 module Primes
-  # Your code goes here...
+  def self.print(nth=10)
+    multiplier = Multiplier.new(nth)
+    Table.new(multiplier).print
+  end
 end
