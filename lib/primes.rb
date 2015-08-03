@@ -1,4 +1,5 @@
 require "primes/multiplier"
+require "primes/table"
 
 
 module Primes
