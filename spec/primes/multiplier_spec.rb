@@ -16,7 +16,7 @@ describe Primes::Multiplier do
                     [58, 87, 145, 203, 319, 377, 493, 551, 667, 841]]}
     let(:factors) {multiplier.factors}
 
-    describe 'multipling each (products)' do
+    describe 'multiplying each prime number (products)' do
       subject{multiplier.products}
 
       it 'produces n * n number of elements' do
@@ -45,6 +45,7 @@ describe Primes::Multiplier do
 
     describe 'prime number predicate' do
       subject{Primes::Multiplier.new(1)}
+      
       it '5 is a prime number' do
         expect(subject.send('is_prime?',5)).to be(true)
       end
