@@ -14,7 +14,7 @@ An example of the way the application may run:
 ###Usage
 ```
 cd /root/of/this/project
-./primes --count n # where n is the number of prime-number you want generated
+./primes --count n # where n is the number of prime-numbers you want generated
 
 e.g: ./primes --count 10
 ```
