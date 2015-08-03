@@ -8,7 +8,12 @@ def red_alert(message)
   "\033[31m #{message} \033[0m\n"
 end
 
-n = ARGV.first.to_i
+if ARGV.first == '--count'
+  n = ARGV.last.to_i
+else
+  puts red_alert :"Use --count flag to supply number of prime-numbers"
+  exit 1
+end
 
 if n <= 0
   puts red_alert :"Provide the number of prime numbers for multiplication table. Greater than 0."
