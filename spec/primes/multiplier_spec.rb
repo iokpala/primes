@@ -32,8 +32,8 @@ describe Primes::Multiplier do
 
     describe 'factors' do
       subject{multiplier.factors}
-      it 'contains list of 10 elements' do
-        expect(subject.count).to eq(10)
+      it 'contains list of n elements' do
+        expect(subject.count).to eq(n)
       end
 
       it 'contains only prime numbers' do
@@ -44,8 +44,8 @@ describe Primes::Multiplier do
     end
 
     describe 'prime number predicate' do
-      subject{Primes::Multiplier.new(1)}
-      
+      subject{multiplier}
+
       it '5 is a prime number' do
         expect(subject.send('is_prime?',5)).to be(true)
       end
