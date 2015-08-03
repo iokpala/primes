@@ -1,36 +1,22 @@
-# Primes
+# Primes Coding challenge
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/primes`. To experiment with that code, run `bin/console` for an interactive prompt.
+###Objective
+Write a program that prints a multiplication table of primes numbers.
 
-TODO: Delete this and the text above, and describe your gem
+The program should take an argument from the command line that specifies the amount of prime numbers to generate and print out a multiplication table for these prime numbers.
 
-## Installation
+An example of the way the application may run:
 
-Add this line to your application's Gemfile:
+&lt;executable_script_name&gt; --­­count 10
 
-```ruby
-gem 'primes'
+![Multiplication Table Image](mutiplication_table.png?raw=true)
+
+###Usage
+```
+cd /root/of/this/project
+./primes --count n # where n is the number of prime-numbers you want generated
+
+e.g: ./primes --count 10
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install primes
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/primes.
-
+![Multiplication Table Image](mutiplication_table.png?raw=true)

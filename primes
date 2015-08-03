@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require "rubygems"
+
+Dir["#{File.dirname(__FILE__)}/lib/*.rb"].each { |fn| require fn }
+
+def red_alert(message)
+  "\033[31m #{message} \033[0m\n"
+end
+
+if ARGV.first == '--count'
+  n = ARGV.last.to_i
+else
+  puts red_alert :"Use --count flag to supply number of prime-numbers"
+  exit 1
+end
+
+if n <= 0
+  puts red_alert :"Provide the number of prime numbers for multiplication table. Greater than 0."
+  exit 1
+end
+
+Primes.print(n)
