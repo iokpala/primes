@@ -23,8 +23,8 @@ describe Primes::Table do
         expect(subject[1].strip).to eq(dashes)
       end
 
-      it 'with whitespace padding equal to character length of the highest product' do
-        expect(subject.last.strip.split.last.length).to eq(3)
+      it 'with whitespace padding equal to character length of the highest product + 1' do
+        expect(table.send(:padding)).to eq(4)
       end
 
       it 'containing one pipe, whitespaces and numbers in each cell' do
