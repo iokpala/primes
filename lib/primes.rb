@@ -1,5 +1,5 @@
-require "primes/multiplier"
-require "primes/table"
+require_relative "primes/multiplier"
+require_relative "primes/table"
 
 module Primes
   def self.print(nth=10)
