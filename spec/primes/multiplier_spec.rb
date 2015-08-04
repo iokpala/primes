@@ -24,8 +24,8 @@ describe Primes::Multiplier do
       end
 
       it 'returns products' do
-        factors.each_with_index do |f, index|
-          expect(factors.map{|tp| tp*f}).to eq(products[index])
+        subject.each_with_index do |product_cells, index|
+          expect(product_cells).to eq(products[index])
         end
       end
     end
