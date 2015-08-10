@@ -1,6 +1,5 @@
 module Primes
   class Multiplier
-    attr_reader :factors, :products
 
     def initialize(nth)
       @nth = nth
